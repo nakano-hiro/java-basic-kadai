@@ -3,41 +3,18 @@ package Practice;
 public class AIQ {
 
 	public static void main(String[] args) {
-
-		int N = 10;
-		int i = 1;
-		int sum = 0;
 		
-		while (i <= N) {
-			sum += i;
-			i++;
-		}
-		System.out.println(sum);
+		Person P1 = new Person();
 		
+		P1.name="太郎";
+		P1.age = 32;
+		P1.introduce();
 		
+		Person P2 = new Person();
 		
-		int M = 10;
-		int j = 1;
-		int sum2 = 0;
+		P2.name="花子";
+		P2.age=65;
+		P2.introduce();
 		
-		while ( j <= M) {
-			if( j % 2 == 0) {
-				sum2 += j;
-			}
-			j++;
-		}
-		System.out.println(sum2);
-		
-		int O = 5;
-		int k = 1;
-		int sum3 = 1;
-		
-		while(k <= O) {
-			sum3 *= k;
-			k++;
-		}
-		System.out.println(sum3);
-
 	}
-
 }
